@@ -1,0 +1,376 @@
+#modal-regis .img-bank {
+  position: absolute;
+  width: calc(100% - 40px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+#modal-regis .border-bank {
+  aspect-ratio: 1;
+  width: 100%;
+}
+#modal-regis .body-method-option {
+  background: #f7f7f7;
+  padding: 0 10px;
+}
+#modal-regis #btn-checkout-regis {
+  border-radius: 10px;
+  background: var(
+    --gradient-2,
+    linear-gradient(270deg, #eb2805 0%, #fbc30b 100%)
+  );
+  border: none;
+  display: block;
+  width: 100%;
+  height: 56px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+#modal-regis .phone-group {
+  border: 1px solid #dadada;
+  border-radius: 5px;
+}
+#modal-regis .phone-group input {
+  border: none;
+}
+#modal-regis .phone-group button {
+  border: none;
+  border-right: 1px solid #dadada;
+  border-radius: 0;
+}
+#modal-regis input#couponInput {
+  color: #dc3f2e;
+}
+#modal-regis .step.active .step-label {
+  font-weight: bold;
+  color: #105ce4;
+}
+#modal-regis .step-label {
+  color: #666;
+}
+#modal-regis .payment-header-t .input-group {
+  gap: 8px;
+  display: flex;
+}
+#modal-regis button#applyCoupon {
+  border-radius: 5px;
+  background: #fa8128;
+  width: 110px;
+}
+#modal-regis .payment-header-t {
+  padding: 0 40px;
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(180deg, #fff 0%, #fff4e9 100%);
+}
+#modal-regis .payment-container {
+  max-width: 650px;
+  margin: 30px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#modal-regis .progress-steps {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: relative;
+}
+#modal-regis .progress-line {
+  position: absolute;
+  top: 34px;
+  left: 30px;
+  right: 100px;
+  height: 1px;
+  background-color: #fa8128;
+  z-index: 0;
+  width: calc(100% - 60px);
+}
+#modal-regis .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  /* color: #105CE4;
+	 */
+}
+#modal-regis .step-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  background-color: white;
+  border: 1px solid #fa8128;
+}
+#modal-regis .step.active .step-circle {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+  color: white;
+}
+#modal-regis .step.completed .step-circle {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+  color: white;
+}
+#modal-regis .payment-header {
+  margin-bottom: 10px;
+}
+#modal-regis .payment-body {
+  padding: 20px 40px;
+}
+#modal-regis .price-info {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 5px;
+	 */
+}
+#modal-regis .total-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  margin-top: 10px;
+  border-top: 1px dashed #e0e0e0;
+}
+#modal-regis .price {
+  color: #ff5722;
+  font-weight: bold;
+}
+#modal-regis .payment-methods-container {
+  background-color: white;
+  padding: 20px 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+  border: 1px solid #ffd8a8;
+}
+#modal-regis .method-option {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#modal-regis .method-title {
+  /* font-weight: bold;
+	 */
+  margin-bottom: 15px;
+}
+#modal-regis .qr-container {
+  position: relative;
+}
+#modal-regis .bank-info {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+#modal-regis .bank-info-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding: 8px 0;
+  color: #333;
+}
+#modal-regis .bank-info-label {
+  color: #333;
+}
+#modal-regis .bank-info-value {
+  font-weight: 600;
+  color: #333;
+}
+#modal-regis .warning-box {
+  background-color: #fff9f0;
+  border: 1px dashed #ffca80;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px dashed var(--Primary-Color, #fa8128);
+  background: #fff9ec;
+  font-size: 12px;
+}
+#modal-regis .warning-icon {
+  color: #ff8c00;
+  margin-right: 5px;
+}
+#modal-regis .download-btn {
+  background-color: #105ce4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 12px;
+}
+#modal-regis .timer-container {
+  background-color: #fff5eb;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #fff0f0 0%, #fed 100%);
+}
+#modal-regis .timer {
+  color: #105ce4;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#modal-regis .status-container {
+  text-align: center;
+  margin-top: 15px;
+  color: #666;
+}
+#modal-regis .status-container .loading-icon {
+  color: #fa8128;
+}
+#modal-regis .loading-icon {
+  display: inline-block;
+  margin-left: 5px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#modal-regis .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#modal-regis .nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#modal-regis .nav-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#modal-regis .prev-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  color: #666;
+}
+#modal-regis .next-btn {
+  background-color: #ffa726;
+  border: none;
+  color: white;
+}
+#modal-regis .tab-content {
+  display: none;
+}
+#modal-regis .tab-content.active {
+  display: block;
+}
+#modal-regis .user-info-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  border: 1px solid #ffd8a8;
+  background: linear-gradient(to right, #fffcf5, #fff5eb);
+  border-radius: 20px;
+  border: 2px solid var(--gradient-2, #eb2805);
+  background: #fff;
+  box-shadow: 0px 7px 35px 0px rgba(0, 0, 0, 0.15);
+}
+#modal-regis .user-info-container a {
+  color: #fa8128;
+  text-decoration: none;
+}
+#modal-regis .success-container {
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 15px;
+  text-align: center;
+  /* background: linear-gradient(to right, #fffaf0, #fff5eb);
+	 */
+}
+#modal-regis .success-icon {
+  width: 65px;
+  height: 65px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: white;
+  font-size: 40px;
+}
+#modal-regis .success-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+#modal-regis .success-text {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+#modal-regis .start-course-btn {
+  background: linear-gradient(to right, #ff8a00, #ff5722);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(255, 138, 0, 0.2);
+  width: 240px;
+}
+#modal-regis .contact-text {
+  color: #666;
+  margin-top: 20px;
+}
+#modal-regis .hotline {
+  color: #ff5722;
+  font-weight: bold;
+}
+#modal-regis .coupon-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+#modal-regis .coupon-btn {
+  background-color: white;
+  border: 1px dashed #ff5722;
+  border-radius: 30px;
+  padding: 6px 15px;
+  color: #ff5722;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#modal-regis .coupon-btn:hover {
+  background-color: #fff5f0;
+  transform: translateY(-2px);
+}
+#modal-regis .coupon-tag {
+  font-size: 10px;
+  color: white;
+  background-color: #ff5722;
+  padding: 2px 4px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
