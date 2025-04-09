@@ -3538,10 +3538,11 @@ body {
 }
 
 .main .elearning-course-playlist .course-list-container {
-  max-height: calc(100vh - 50px);
+  max-height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  top: 80px !important;
 }
 
 .elearning-course
@@ -3899,11 +3900,12 @@ body {
 .elearning-course .course-section .course-item-accordion-header-title {
   color: #111827;
   font-family: "SVN-Mona Sans", Inter, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: 0.5px;
+  padding-right: 20px;
 }
 
 .elearning-course .course-meta {
@@ -3936,11 +3938,17 @@ body {
 }
 
 .elearning-course .course-section .accordion-body {
-  padding: 16px;
+  padding: 0px;
 }
 
 .elearning-course .course-lessons > .lesson-item {
-  margin-top: 16px;
+  margin-top: 0px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.elearning-course .course-lessons > .lesson-item:hover {
+  background-color: #f5f5f5;
 }
 
 .elearning-course .course-lessons > .lesson-item:first-child {
@@ -3994,7 +4002,7 @@ body {
 .elearning-course .lesson-meta {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0px;
 }
 
 .user-badge {
@@ -4251,4 +4259,11 @@ body {
 .modules-section .tier-item.active .tier-badge {
   background: #fa8128;
   color: #fff !important;
+}
+.elearning-course .lesson-meta .badge {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  font-size: 10px;
+  margin-right: 5px;
 }
