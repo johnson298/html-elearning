@@ -831,14 +831,26 @@
                     style="display: none"
                   >
                     <p class="text-text16">Đừng bỏ lỡ có hơi chí còn:</p>
-                    <div class="countdown-timer" data-countdown="2025-04-18">
-                      <span class="timer-box time-day">02d</span>
-                      <span class="timer-separator">:</span>
-                      <span class="timer-box time-hour">14h</span>
-                      <span class="timer-separator">:</span>
-                      <span class="timer-box time-minute">14m</span>
-                      <span class="timer-separator">:</span>
-                      <span class="timer-box time-second">14s</span>
+                    <div class="countdown-timer" data-countdown="2025-04-13">
+                      <div class="timer-box time-day">
+                        <span class="timer-box-number">02</span>
+                        <span class="timer-box-label">Ngày</span>
+                      </div>
+
+                      <div class="timer-box time-hour">
+                        <span class="timer-box-number">14</span>
+                        <span class="timer-box-label">Giờ</span>
+                      </div>
+
+                      <div class="timer-box time-minute">
+                        <span class="timer-box-number">14</span>
+                        <span class="timer-box-label">Phút</span>
+                      </div>
+
+                      <div class="timer-box time-second">
+                        <span class="timer-box-number">14</span>
+                        <span class="timer-box-label">Giây</span>
+                      </div>
                     </div>
                   </div>
 
@@ -1078,7 +1090,25 @@
 
     <script>
       $(document).ready(function () {
-        // Countdown timer logic
+        function appendTimerBox(days, hours, minutes, seconds) {
+          const countdownElement = $(".countdown-timer");
+          countdownElement.html(
+            `<div class='timer-box time-day'>
+                <span class='timer-box-number'>${days}</span>
+                <span class='timer-box-label'>Ngày</span>
+                </div><div class='timer-box time-hour'>
+                <span class='timer-box-number'>${hours}</span>
+                <span class='timer-box-label'>Giờ</span>
+                </div><div class='timer-box time-minute'>
+                <span class='timer-box-number'>${minutes}</span>
+                <span class='timer-box-label'>Phút</span>
+                </div><div class='timer-box time-second'>
+                <span class='timer-box-number'>${seconds}</span>
+                <span class='timer-box-label'>Giây</span>
+                </div>`
+          );
+        }
+
         function updateCountdown() {
           var countdownElement = $(".countdown-timer");
           var targetDate = new Date(countdownElement.data("countdown"));
@@ -1089,9 +1119,7 @@
 
           if (difference <= 0) {
             // If countdown has ended
-            countdownElement.html(
-              "<span class='timer-box time-day'>00</span><span class='timer-separator'>:</span><span class='timer-box time-hour'>00</span><span class='timer-separator'>:</span><span class='timer-box time-minute'>00</span>"
-            );
+            appendTimerBox("00", "00", "00", "00");
             $("#countdown-presell").hide();
             return;
           }
@@ -1114,21 +1142,7 @@
           seconds = seconds < 10 ? "0" + seconds : seconds;
 
           // Update countdown display
-          countdownElement.html(
-            "<span class='timer-box time-day'>" +
-              days +
-              "d" +
-              "</span><span class='timer-separator'>:</span><span class='timer-box time-hour'>" +
-              hours +
-              "h" +
-              "</span><span class='timer-separator'>:</span><span class='timer-box time-minute'>" +
-              minutes +
-              "m" +
-              "</span><span class='timer-separator'>:</span><span class='timer-box time-second'>" +
-              seconds +
-              "s" +
-              "</span>"
-          );
+          appendTimerBox(days, hours, minutes, seconds);
         }
 
         // Update countdown every second
