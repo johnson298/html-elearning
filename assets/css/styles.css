@@ -607,7 +607,7 @@ body {
   }
 
   .hero-section .hero-content .expert-image {
-    margin-left: 50px;
+    margin: 20px auto 0;
   }
 }
 
@@ -2906,7 +2906,7 @@ body {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 0;
-  line-height: 1.1;
+  line-height: 80px;
   background: var(
     --liner-yellow,
     linear-gradient(180deg, #fff8e1 0%, #ffe898 100%)
@@ -3136,7 +3136,9 @@ body {
 @media (max-width: 500px) {
   * {
   }
-
+  .modal-regis .payment-body {
+    padding: 20px 15px;
+  }
   .wrap-footer {
     flex-direction: column;
     gap: 10px;
