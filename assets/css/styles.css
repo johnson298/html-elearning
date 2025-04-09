@@ -1549,12 +1549,14 @@ body {
   background: linear-gradient(180deg, #fff0f0 0%, #fed 100%);
   width: fit-content;
   margin: 13px auto 0;
-  padding: 4px 30px 8px;
+  padding: 10px 30px;
 }
 
 .modules-section .countdown-section > p {
   color: #333;
   margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .modules-section .countdown-timer {
@@ -1562,8 +1564,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5px;
-
-  color: #105ce4;
+  color: #ef7318;
   text-align: center;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: Inter, sans-serif;
@@ -1572,6 +1573,8 @@ body {
   font-weight: 800;
   line-height: 28px; /* 87.5% */
   letter-spacing: 1.92px;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 /* Tier Pricing */
@@ -4266,4 +4269,19 @@ body {
   align-items: center;
   font-size: 10px;
   margin-right: 5px;
+}
+.countdown-timer .timer-box {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ef7318;
+  padding: 10px 6px;
+  border-radius: 7px;
+  gap: 4px;
+  color: #ef7318;
+  width: 66px;
+}
+
+.countdown-timer .timer-box .timer-box-label {
+  font-size: 16px;
+  text-transform: uppercase;
 }
